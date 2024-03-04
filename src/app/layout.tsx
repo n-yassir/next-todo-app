@@ -22,6 +22,7 @@ export default function RootLayout({
       >
         <Navbar />
         <main className="container flex-1 flex flex-col justify-center max-w-screen-sm">
+        {process.env.NEXT_PUBLIC_ANALYTICS_ID}
           {children}
         </main>
         <Footer />
